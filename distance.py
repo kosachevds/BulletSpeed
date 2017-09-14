@@ -15,9 +15,7 @@ def get_speed(distance):
 
 mean_distance = sqrt(2 * HEIGHT / G) * SPEED
 distances = numpy.random.normal(mean_distance, DISTANCE_STD, POINTS).tolist()
-speeds = []
-for d in distances:
-    speeds.append(get_speed(d))
+speeds = [get_speed(d) for d in distances]
 
 mean_speed = numpy.mean(speeds)
 std_speed = numpy.std(speeds)
