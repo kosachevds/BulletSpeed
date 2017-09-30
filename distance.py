@@ -3,7 +3,7 @@ import numpy
 import matplotlib.pyplot as pyplot
 
 SPEED = 800
-HEIGHT = 1
+HEIGHT = 2
 G = 9.8
 POINTS = 1000 
 DISTANCE_STD = 5
